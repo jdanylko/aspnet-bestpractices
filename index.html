@@ -48,32 +48,75 @@
     <style>
         .text-lg {
             font-size: 18px;
+            opacity: 1
         }
 
         .text-md {
             font-size: 16px;
+            opacity: 1
+        }
+
+        .bg-image {
+            background: url(images/jd-desk.jpg) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            padding-top: 8em
+        }
+
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            .bg-image {min-height: 100%}
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            .bg-image { min-height: 700px;}
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            .bg-image {min-height: 900px; }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            .bg-image { min-height: 900px; }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            .bg-image { min-height: 900px;}
         }
     </style>
 </head>
 
 <body>
-    <div class="container-fluid">
+    <header class="fixed-top bg-body-tertiary">
+        <div class="bg-black text-center p-0 pt-3 pb-1 text-white fw-bolder">
+            <p>Purchase Your Copy Today! <a href="https://packt.link/4uFao" title="Buy ASP.NET 8 Best Practices on Amazon" class="btn btn-warning">Buy on Amazon</a></p>
+        </div>
+    </header>
 
-        <header>
-            <h1 class="mt-3 text-center">Learn over 120 ASP.NET Best Practices</h1>
-            <h2 class="lead mt-3 mb-5 text-center">Improve your ASP.NET skills with industry-proven best practices</h2>
-        </header>
-        <div class="row align-items-center">
+    <div class="container-fluid bg-image object-fit-fill">
+        <div class="container">
+            <h1 class="pt-5 text-center text-white">Learn over 120 ASP.NET Best Practices</h1>
+            <h2 class="lead mt-3 mb-5 text-center text-white fw-bolder">Improve your ASP.NET skills with industry-proven best practices</h2>
+            <div class="row align-items-center">
 
-            <div class="col-12 col-md-6 col-lg-6 mb-4 text-end">
-                <img src="https://www.aspnet-bestpractices.com/images/two-device-book.png" title="Two devices with ebooks and one physical copy of the book." width="100%" alt="Two devices with ebooks and one physical copy of the book." />
-            </div>
-            <div class="col-12 col-md-6 col-lg-6">
-                <p class="text-lg"><em>"ASP.NET 8 Best Practices"</em> uses 20 years of real-world experience and teaches you to apply common and recommended practices <strong>to make your code efficient and more maintainable</strong>.</p>
-                <p class="text-md mb-4">Learn advanced concepts and techniques like version control and CI/CD pipelines along with Entity Framework Core, Web APIs, and Middleware.</p>
-                <p><a href="https://packt.link/4uFao" title="Buy ASP.NET 8 Best Practices on Amazon" class="btn btn-warning">Buy on Amazon</a></p>
+                <div class="col-12 col-md-6 col-lg-6 mb-4 text-end text-white">
+                    <img src="https://www.aspnet-bestpractices.com/images/two-device-book.png" title="Two devices with ebooks and one physical copy of the book." width="100%" alt="Two devices with ebooks and one physical copy of the book." />
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 bg-white p-5">
+                    <p class="text-lg"><em>"ASP.NET 8 Best Practices"</em> uses 20 years of real-world web experience to teach developers how to apply common and recommended practices <strong>to make your code more efficient and maintainable</strong>.</p>
+                    <p class="text-md mb-4">Learn advanced concepts and techniques like version control and CI/CD pipelines along with Entity Framework Core, Web APIs, and Middleware.</p>
+                    <p><a href="https://packt.link/4uFao" title="Buy ASP.NET 8 Best Practices on Amazon" class="btn btn-warning">Buy on Amazon</a></p>
+                </div>
             </div>
         </div>
+        
+
     </div>
 
 

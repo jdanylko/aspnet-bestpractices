@@ -43,9 +43,13 @@
     <meta property="book:tag" content="aspnet core">
     <meta property="book:tag" content="asp net core">
 
-    <link async rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-    <link async rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
     <style>
+        body {
+            background-color: #000000;
+        }
+
         .text-lg {
             font-size: 18px;
             opacity: 1
@@ -65,29 +69,44 @@
             padding-top: 8em
         }
 
+        .ntm-5 {
+            margin-top: -5em;
+            position: relative;
+        }
+
         /* Extra small devices (phones, 600px and down) */
         @media only screen and (max-width: 600px) {
-            .bg-image {min-height: 100%}
+            .bg-image {
+                min-height: 100%
+            }
         }
 
         /* Small devices (portrait tablets and large phones, 600px and up) */
         @media only screen and (min-width: 600px) {
-            .bg-image { min-height: 700px;}
+            .bg-image {
+                min-height: 700px;
+            }
         }
 
         /* Medium devices (landscape tablets, 768px and up) */
         @media only screen and (min-width: 768px) {
-            .bg-image {min-height: 900px; }
+            .bg-image {
+                min-height: 900px;
+            }
         }
 
         /* Large devices (laptops/desktops, 992px and up) */
         @media only screen and (min-width: 992px) {
-            .bg-image { min-height: 900px; }
+            .bg-image {
+                min-height: 900px;
+            }
         }
 
         /* Extra large devices (large laptops and desktops, 1200px and up) */
         @media only screen and (min-width: 1200px) {
-            .bg-image { min-height: 900px;}
+            .bg-image {
+                min-height: 900px;
+            }
         }
     </style>
 </head>
@@ -95,30 +114,264 @@
 <body>
     <header class="fixed-top bg-body-tertiary">
         <div class="bg-black text-center p-0 pt-3 pb-1 text-white fw-bolder">
-            <p>Purchase Your Copy Today! <a href="https://packt.link/4uFao" title="Buy ASP.NET 8 Best Practices on Amazon" class="btn btn-warning">Buy on Amazon</a></p>
+            <p>Purchase Your Copy Today! <a href="https://packt.link/4uFao" title="Buy ASP.NET 8 Best Practices on Amazon"><img src="https://www.aspnet-bestpractices.com/images/amazon-order-now.jpg" alt="Order now on Amazon.com button" /></a></p>
         </div>
     </header>
 
-    <div class="container-fluid bg-image object-fit-fill">
+    <div class="container-fluid bg-image object-fit-fill mb-5">
         <div class="container">
-            <h1 class="pt-5 text-center text-white">Learn over 120 ASP.NET Best Practices</h1>
-            <h2 class="lead mt-3 mb-5 text-center text-white fw-bolder">Improve your ASP.NET skills with industry-proven best practices</h2>
-            <div class="row align-items-center">
+            <div class="row">
+                <div class="col">
+                    <h1 class="pt-5 text-center text-white">
+                        Need guidelines for creating great code?
+                    </h1>
+                    <h2 class="lead mt-3 mb-5 text-center text-white fw-bolder">
+                        Improve your ASP.NET Core skills with over 120 real-world, industry-proven best practices
+                    </h2>
+                </div>
+            </div>
+            <div class="row align-items-center me-0">
 
                 <div class="col-12 col-md-6 col-lg-6 mb-4 text-end text-white">
                     <img src="https://www.aspnet-bestpractices.com/images/two-device-book.png" title="Two devices with ebooks and one physical copy of the book." width="100%" alt="Two devices with ebooks and one physical copy of the book." />
                 </div>
-                <div class="col-12 col-md-6 col-lg-6 bg-white p-5">
+                <div class="col-12 col-md-6 col-lg-6 bg-white p-5 rounded shadow mb-5">
                     <p class="text-lg"><em>"ASP.NET 8 Best Practices"</em> uses 20 years of real-world web experience to teach developers how to apply common and recommended practices <strong>to make your code more efficient and maintainable</strong>.</p>
                     <p class="text-md mb-4">Learn advanced concepts and techniques like version control and CI/CD pipelines along with Entity Framework Core, Web APIs, and Middleware.</p>
                     <p><a href="https://packt.link/4uFao" title="Buy ASP.NET 8 Best Practices on Amazon" class="btn btn-warning">Buy on Amazon</a></p>
                 </div>
             </div>
         </div>
-        
 
     </div>
+    <div class="container bg-white ntm-5">
+        
+        <!-- <div class="row">
+            <div class="col-12 p-5 pb-2">
+                <h2 class="text-center">About the book</h2>
+                <hr class="mx-auto border-dark border-4 w-50" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+            </div>
 
+        </div>
+ -->
+        <div class="row">
+            <div class="col-12 p-5 pb-5">
+                <h2 class="text-center">What's Inside</h2>
+                <hr class="mx-auto border-dark border-4 w-50" />
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4 pb-5">
+            <div class="col">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fa-brands fa-github fa-2x m-0 me-2 align-middle"></i> Source Control
+                        </h5>
+                        <p class="card-text my-1 align-middle"><small class="text-body-secondary">Chapter 1</small></p>
+                        <p class="card-text">
+                            <ul>
+                                <li>Why source control is considered a developer's superpower</li>
+                                <li>Identifying and selecting a branching workflow</li>
+                                <li>Why tagging is important</li>
+                                <li>Understand proper commit etiquette</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fa-solid fa-gear fa-2x m-0 me-2 align-middle"></i>
+                            Building Software with Software
+                        </h5>
+                        <p class="card-text my-1"><small class="text-body-secondary">Chapter 2</small></p>
+                        <p class="card-text">
+                            <ul>
+                                <li>What is CI/CD?</li>
+                                <li>Explain how to prepare code for a pipeline</li>
+                                <li>How to deploy databases</li>
+                                <li>Review various types of cloud providers</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fa-solid fa-filter fa-2x m-0 me-2 align-middle"></i>Middleware
+                        </h5>
+
+                        <p class="card-text my-1"><small class="text-body-secondary">Chapter 3</small></p>
+                        <p class="card-text">
+                            <ul>
+                                <li>Using a Middleware pipeline</li>
+                                <li>Optimize your Middleware Pipeline</li>
+                                <li>Using delegates and extension methods</li>
+                                <li>Creating your own Middleware component</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fa-solid fa-lock fa-2x m-0 me-2 align-middle"></i> Security</h5>
+                        <p class="card-text my-1"><small class="text-body-secondary">Chapter 4</small></p>
+                        <p class="card-text">
+                            <ul>
+                                <li>Why is security important</li>
+                                <li>Optimize your Middleware Pipeline</li>
+                                <li>Using delegates and extension methods</li>
+                                <li>Creating your own Middleware component</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fa-solid fa-database fa-2x m-0 me-2 align-middle"></i> Entity Framework Core</h5>
+                        <p class="card-text my-1"><small class="text-body-secondary">Chapter 5</small></p>
+                        <p class="card-text">
+                            <ul>
+                                <li>Various ways to implement Entity Framework Core</li>
+                                <li>Why async/await is important</li>
+                                <li>Using Resources for large seed data</li>
+                                <li>Identify better alternatives to using LINQ</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fa-brands fa-html5 fa-2x m-0 me-2 align-middle"></i> Web User Interfaces</h5>
+                        <p class="card-text my-1"><small class="text-body-secondary">Chapter 6</small></p>
+                        <p class="card-text">
+                            <ul>
+                                <li>Reasons to use Task Runners</li>
+                                <li>Create client-side workflows</li>
+                                <li>Benefits of centralizing site URLs</li>
+                                <li>Using HTML Helpers, TagHelpers, ViewComponents, and Blazor components</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fa-solid fa-flask fa-2x m-0 me-2 align-middle"></i> Testing Your Code</h5>
+                        <p class="card-text my-1"><small class="text-body-secondary">Chapter 7</small></p>
+                        <p class="card-text">
+                            <ul>
+                                <li>Understanding various testing concepts</li>
+                                <li>Benefits of using the triple-A (AAA) approach</li>
+                                <li>Why it's important to avoid write extra unit test helpers</li>
+                                <li>Using unit tests as documentation</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fa-solid fa-bug fa-2x m-0 me-2 align-middle"></i> Exception Handling</h5>
+                        <p class="card-text my-1"><small class="text-body-secondary">Chapter 8</small></p>
+                        <p class="card-text">
+                            <ul>
+                                <li>Understanding different types of exception handling</li>
+                                <li>Implementing global exception handling and logging</li>
+                                <li>Why empty catch blocks are wasteful</li>
+                                <li>Using pattern matching with exception filtering</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fa-solid fa-globe fa-2x m-0 me-2 align-middle"></i> Web APIs</h5>
+                        <p class="card-text my-1"><small class="text-body-secondary">Chapter 9</small></p>
+                        <p class="card-text">
+                            <ul>
+                                <li>Understand techniques like designing, creating, and testing APIs</li>
+                                <li>Creating intuitive APIs using HTTP verbs with status codes</li>
+                                <li>Implement API pagination</li>
+                                <li>Why it's important to avoid creating Http Clients</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3">
+                    <div class="card-body h-100">
+                        <h5 class="card-title"><i class="fa-solid fa-bolt fa-2x m-0 me-2 align-middle"></i> Performance</h5>
+                        <p class="card-text my-1"><small class="text-body-secondary">Chapter 10</small></p>
+                        <p class="card-text">
+                            <ul>
+                                <li>Why performance is so important and why it matters</li>
+                                <li>How to establish baselines</li>
+                                <li>Learn client-side performance techniques</li>
+                                <li>Optimizing Entity Framework Core and optimizing HTML</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--     <div class="container bg-white">
+    <div class="row">
+        <div class="col-12 p-5 pb-2">
+            <h2 class="text-center">About the Author</h2>
+            <hr class="mx-auto border-dark border-4 w-50" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+        </div>
+
+    </div>
+</div>
+-->
+
+    <footer id="social">
+        <div class="bg-secondary-subtle text-dark pt-5 pb-5">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-6">
+                        <h4>Purchase your copy today</h4><br />
+                        <a href="https://packt.link/4uFao" title="Buy ASP.NET 8 Best Practices on Amazon"><img src="https://www.aspnet-bestpractices.com/images/amazon-order-now.jpg" alt="Order now on Amazon.com button" /></a>
+                    </div>
+                    <div class="col-6">
+                        <h5>Social Connections</h5>
+                        <ul class="list-unstyled list-inline footer-list">
+                            <li class="my-2 list-inline-item"><a href="https://twitter.com/jdanylko"><i class="fab fa-fw fa-twitter-square fa-2x"></i></a></li>
+                            <li class="my-2 list-inline-item"><a href="https://www.linkedin.com/in/jonathandanylko/"><i class="fab fa-fw fa-linkedin fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
